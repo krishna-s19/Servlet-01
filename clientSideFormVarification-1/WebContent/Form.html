@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+		
+<script language="JavaScript">
+
+	function validate(frm){
+	
+	let name = frm.name.value;
+	let age = frm.age.value;
+	let address = frm.address.value;
+	let flag = true;
+	
+	if(name==""){
+		flag=false;
+		alert("Person name is required");
+		frm.name.focus();
+	}
+	else if(name.length<10){
+		flag=false;
+		alert("Person name is must have minimum 10 charactres");
+		frm.name.focus();		
+	}
+		
+	 if(age==""){
+		flag=false;
+		alert("Person age is required");
+		frm.age.focus();
+	}
+		else  if(isNaN(age)){
+		flag=false;
+		alert("Person age is Numeric values only");
+		frm.age.focus();
+		}
+	  
+	else if(age<1  || age> 125){
+		flag=false;
+		alert("Person age is in between 1 to 125 only");
+		frm.age.focus();
+	}
+	 
+		if(address==""){
+			flag=false;
+			alert("Person address is required");
+			frm.address.focus();
+		}
+		return flag;
+	}
+</script>
+	
+	<noscript>
+		<h1 style='color:Red ; text-align:center; '>Enables JavaScript</h1>
+	</noscript>
+			
+<h1 style='color:Green;text-align:center;'>HtmlToServletCommunication Using Forms</h1>
+
+<form action='clienturl' method="post" onsubmit="return  validate(this)">
+
+	Enter name :: 
+	<input type="text" name='name' id='name' ><br>
+	Person Age ::
+		<input type="text" name='age' id='age' ><br>
+	Person Address ::
+	<input type="text" name='address' id='address' ><br>
+	<input type="submit" value="register">
+
+</form>
+				
+</body>
+</html>

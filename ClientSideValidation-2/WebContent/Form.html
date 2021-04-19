@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript" lang="JavaScript" src='js/Validate.js'> </script>
+
+<h1 style='color:Green;text-align:center;'>Client Side Forms Validation</h1>
+<noscript>
+<h2 style='color:red;text-align:center'> Enables JavaScript</h2>
+</noscript>
+
+<form action='client' method="post" onsubmit="return validate(this)">
+
+	Enter name :: <label style='color:red'>*</label>
+	<input type="text" name='name' id='name' ><span style='color:red' id="pnameErr"></span><br>
+	Person Age ::<label style='color:red'>*</label>
+		<input type="text" name='age' id='age' ><span style='color:red' id="pageErr"></span><br>
+	Person Address ::<label style='color:red'>*</label>
+	<input type="text" name='address' id='address' ><span style='color:red' id="paddressErr"></span><br>
+	<input type="submit" value="register">
+
+</form>
+	
+</body>
+</html>

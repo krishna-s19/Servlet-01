@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 style="text-align:center">Html to Servlet Communication Using All Components</h1>
+	<form action="allcomp">
+		<table align='center'  bgcolor='tomato'   border="2">
+			<tr>
+				<td>Name ::</td>
+				<td><input type="text" name="name"
+					placeholder="Enter Person name"></td>
+			</tr>
+			<tr>
+				<td>Age ::</td>
+				<td><input type="password" name="age"
+					placeholder="Enter Person Age"></td>
+			</tr>
+			<tr>
+				<td>Address ::</td>
+				<td><textarea rows="10" cols="50" name="address"
+						placeholder="Enter Person Address"></textarea></td>
+			</tr>
+			<tr>
+				<td>Gender::</td>
+				<td><input type="radio" name='gender' value='M' checked>
+					Male &nbsp <input type="radio" name='gender' value='F'>
+					Female &nbsp <input type="radio" name='gender' value='O'>
+					Others</td>
+			</tr>
+			<tr>
+				<td>Marital Status ::</td>
+				<td><input type="checkbox" name='ms' value='Married'>
+					checked</td>
+			</tr>
+
+
+		<tr>
+				<td> Qualification  ::</td>
+			<td><select name="qlfy">
+			<option value=" " selected>----- Select value ----</option>
+			<option value="egg" >B.tech/B.E/M.tech/M.E</option>
+			<option value="medico" >MBBS/M.D/BDS/BPS</option>
+			<option value="arts">BA/MA</option>
+			<option value="commerce"> B.com/M.com/CA</option>
+			</select>
+			</td>
+			</tr>
+			
+			
+			<tr>
+				<td> Fav Cities</td>
+			<td><select name="cities" multiple>
+			
+			<option value="Indore" >Indore</option>
+			<option value="New Delhi" >New Delhi</option>
+			<option value="Hyderabad" >Hyderabad</option>
+			<option value="Mumbai"> Mumbai</option>
+			</select>
+			</td>
+			</tr>
+			
+			<tr>
+				<td> Hobbies</td>
+			<td><input type="checkbox" name="hb" checked value="Reading">Reading
+			<input type="checkbox" name="hb"  value="Watching Tv">Watching TV
+			<input type="checkbox" name="hb"  value="Stamp Collection">Stamp Collection
+			<input type="checkbox" name="hb"  value="Listening Music">Listening Music
+			</td>
+			</tr>
+			
+			<tr>
+			<td>Date Of birth</td>
+			<td><input type="date" name= "date"></td>
+			</tr>
+			
+			<tr>
+			<td>Favirorite Color::</td>
+			<td><input type="color" name="color"></td>
+			</tr>
+			
+			<tr>
+			<td>Email ::</td>
+			<td><input type="email" name="email"></td>
+			</tr>
+			
+			<tr>
+			<td>Fb Url ::</td>
+			<td><input type="url" name="url"></td>
+			</tr>
+			
+			
+			<tr>
+			<td>Mobile No ::</td>
+			<td><input type="tel" name="mobileNo"></td>
+			</tr>
+			
+			<tr>
+			<td>Salary ::</td>
+			<td><input type="range" name="salary" min="10000" max="100000"></td>
+			</tr>
+			
+			<tr>
+			<td>Birth Week ::</td>
+			<td><input type="week" name="week"></td>
+			</tr>
+
+			<tr>
+			<td>Birth Month ::</td>
+			<td><input type="month" name="month"></td>
+			</tr>			
+			
+			<tr>
+			<td><input   type="submit"  value="sendRequest">    </td>
+			<td><input type="reset" value="cancel"></td>
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>
